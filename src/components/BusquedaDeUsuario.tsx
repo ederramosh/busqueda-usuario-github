@@ -24,11 +24,13 @@ export const BusquedaDeUsuario = ({onSearchGitHubUser}: busquedaDeUsuarioProps) 
     <>
         <form onSubmit={ onSubmit }>
             <input 
+                className="form-control mb-3"
                 type="text"
+                placeholder="Digita usuario de GitHub, ejemplo ederramosh"
                 value={ inputValue }
                 onChange={ onInputChange }
             />
-            <button>Search</button>
+            <button className="btn btn-primary">Search</button>
         </form>
     </>
   )

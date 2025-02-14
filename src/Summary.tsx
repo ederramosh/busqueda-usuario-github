@@ -8,14 +8,19 @@ export const Summary = () => {
 
     const onSearchGitHubUser = (inputValue: string): void => {
         setGitHubUser(inputValue);
-
     }
 
   return (
     <>
-        <h1>Busqueda por usuario</h1>
-        <BusquedaDeUsuario onSearchGitHubUser={ onSearchGitHubUser }/>
-        <UserGitHub gitHubUser={ gitHubUser }/>
+      <main className='container'>
+        <section className="text-center m-5">
+          <h1 className="m-5">Busqueda por Usuario</h1>
+          <BusquedaDeUsuario onSearchGitHubUser={ onSearchGitHubUser }/>
+        </section>
+        <section>
+          <UserGitHub gitHubUser={ gitHubUser }/>
+        </section>
+      </main>
     </>
   )
 }

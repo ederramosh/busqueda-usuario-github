@@ -6,4 +6,4 @@ export type gitHubUserInfo = {
     html_url: string,
     public_repos: number,
     avatar_url: string,
-}
+};

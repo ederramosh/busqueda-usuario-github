@@ -13,16 +13,15 @@ export const useGetInfo = (gitHubUser: string) => {
         public_repos: 0,
         avatar_url: "",
     });
-
+    
     const getDataFromAPI = async () => {
         const getInfo = await getUserAPI(gitHubUser);
         setUserInfo(getInfo);
-
     }
 
     useEffect(() => {
       getDataFromAPI();
     }, [gitHubUser]);
     
-    return userInfo;
+    return userInfo
 }
